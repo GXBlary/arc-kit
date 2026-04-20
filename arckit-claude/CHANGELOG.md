@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.8.0] - 2026-04-20
+
+### Added (Community-contributed)
+
+- 3 Austrian regulatory commands seeded in #320 and verified in #333 by @gtonic: `/arckit.at-dsgvo` (DSG/DSGVO), `/arckit.at-nisg` (NISG idF BGBl. I Nr. 94/2025 — NIS2 transposition), `/arckit.at-bvergg` (BVergG 2018, thresholds per VO 2023/2495). New doc-type codes ATDSG, ATNISG, BVERGG registered in both `config/doc-types.mjs` and `commands/pages.md`. @gtonic added as Austrian domain CODEOWNERS (#334)
+- `/arckit.fr-irn` — IRN (Indice de Résilience Numérique) self-assessment per the aDRI framework (#322)
+
+### Fixed
+
+- Propagate `.guide-status.community` CSS to `pages-template.html` (#327)
+- Register 18 EU/FR community guide stems in the `sync-guides` hook
+- AT DSG template drift: sync `arckit-claude/templates/at-dsgvo-template.md` with the verified `.arckit/` copy so plugin and extension users get the enriched template
+- `docs/superpowers/README.md` MD040 lint error (missing language tag on code fence)
+
+### Docs
+
+- @gtonic added to `docs/contributors.html` as code contributor + Austrian domain maintainer (#328)
+- CHANGELOG `[Unreleased]` sync covering 12 untracked commits since v4.7.2 (#329)
+- Book content moved to `tractorjuice/arckit-book` (#324, #325)
+- Star History chart added to README; DeepWiki `.devin/wiki.json` added
+- `docs/superpowers/` tidy + README (#326)
+- Registry-consolidation design spec and plan (not yet implemented)
+
 ## [4.7.2] - 2026-04-19
 
 ### Added

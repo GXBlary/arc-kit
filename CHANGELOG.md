@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.8.0] - 2026-04-20
+
 ### Added (Community-contributed)
 
 > ⚠️ The 3 Austrian regulatory commands below are a seed contribution. The verification pass in #333 resolved the majority of `[NEEDS VERIFICATION]` markers with domain-authoritative citations (NISG BGBl. I Nr. 94/2025, VO 2023/2495 thresholds, three-tier CERT reporting, §107 BVergG accessibility). Remaining flagged items (DSB enforcement positions, Land competence boundaries, command-prompt internals) should still be reviewed by an Austrian practitioner (DPO / CISO / Vergabejurist) before external reliance. See #304 for the overlay design.
