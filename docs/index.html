@@ -338,6 +338,7 @@
                 <li class="app-nav-bar__item"><a href="use-cases.html">Example Projects</a></li>
                 <li class="app-nav-bar__item"><a href="guides.html">Guides</a></li>
                 <li class="app-nav-bar__item"><a href="roles.html">Roles</a></li>
+                <li class="app-nav-bar__item"><a href="articles.html">Articles</a></li>
                 <li class="app-nav-bar__item"><a href="getting-started.html">Getting Started</a></li>
                 <li class="app-nav-bar__item"><a href="contributors.html">Contributors</a></li>
             </ul>
@@ -512,6 +513,116 @@
                 </div>
             </div>
         </div>
+
+        <!-- 5b. Latest writing -->
+        <div class="govuk-width-container govuk-!-margin-top-9" id="articles">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+                <h2 class="govuk-heading-l" style="margin:0;">Latest writing</h2>
+                <a href="articles.html" class="govuk-link govuk-body-s">View all articles &rarr;</a>
+            </div>
+            <div class="app-article-teaser-grid">
+                <article class="app-article-teaser">
+                    <a class="app-article-teaser__media" href="articles.html">
+                        <img src="articles/2026-04-22-wardley-commands-walkthrough-hero.png" alt="Five Wardley commands pipeline hero">
+                    </a>
+                    <div class="app-article-teaser__body">
+                        <div class="app-article-teaser__meta">
+                            <span class="app-article-teaser__tag app-article-teaser__tag--guide">Guide</span>
+                            <span class="app-article-teaser__date">22 April 2026</span>
+                        </div>
+                        <h3 class="govuk-heading-s app-article-teaser__title">The Five Wardley Commands in ArcKit</h3>
+                        <p class="app-article-teaser__summary">A command-by-command walkthrough of ArcKit's Wardley Mapping suite: value-chain, wardley, doctrine, climate, and gameplay.</p>
+                        <a href="https://github.com/tractorjuice/arc-kit/blob/main/docs/articles/2026-04-22-wardley-commands-walkthrough.md" class="govuk-link app-article-teaser__link">Read article &rarr;</a>
+                    </div>
+                </article>
+                <article class="app-article-teaser">
+                    <a class="app-article-teaser__media" href="articles.html">
+                        <img src="articles/2026-04-22-v490-wardley-mapping-hero.png" alt="ArcKit 4.9.0 Wardley Maps render natively hero">
+                    </a>
+                    <div class="app-article-teaser__body">
+                        <div class="app-article-teaser__meta">
+                            <span class="app-article-teaser__tag app-article-teaser__tag--release">Release</span>
+                            <span class="app-article-teaser__date">22 April 2026</span>
+                        </div>
+                        <h3 class="govuk-heading-s app-article-teaser__title">ArcKit 4.9.0: Wardley Maps Render Natively</h3>
+                        <p class="app-article-teaser__summary">Mermaid 11.14.0 brings wardley-beta. ArcKit adopts it everywhere with 100% conversion fidelity across 147 real-world maps.</p>
+                        <a href="https://github.com/tractorjuice/arc-kit/blob/main/docs/articles/2026-04-22-v490-wardley-mapping-support.md" class="govuk-link app-article-teaser__link">Read article &rarr;</a>
+                    </div>
+                </article>
+                <article class="app-article-teaser">
+                    <a class="app-article-teaser__media" href="articles.html">
+                        <img src="articles/2026-04-20-v480-austrian-overlay-hero.png" alt="Austrian regulatory overlay hero">
+                    </a>
+                    <div class="app-article-teaser__body">
+                        <div class="app-article-teaser__meta">
+                            <span class="app-article-teaser__tag app-article-teaser__tag--release">Release</span>
+                            <span class="app-article-teaser__date">20 April 2026</span>
+                        </div>
+                        <h3 class="govuk-heading-s app-article-teaser__title">What You Can Now Do in Austria with ArcKit v4.8</h3>
+                        <p class="app-article-teaser__summary">Three Austrian regulatory commands: DSG/DSGVO, NISG (NIS2), and BVergG 2018 procurement — a community-maintained overlay.</p>
+                        <a href="https://github.com/tractorjuice/arc-kit/blob/main/docs/articles/2026-04-20-v480-austrian-overlay.md" class="govuk-link app-article-teaser__link">Read article &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <style>
+            .app-article-teaser-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+            .app-article-teaser {
+                background: #f3f2f1;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                border-top: 4px solid #912b88;
+                transition: transform 0.15s ease, box-shadow 0.15s ease;
+            }
+            .app-article-teaser:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            }
+            .app-article-teaser__media {
+                aspect-ratio: 1200 / 630;
+                background: linear-gradient(135deg, #1a1d2e 0%, #0a0d14 100%);
+                overflow: hidden;
+            }
+            .app-article-teaser__media img {
+                width: 100%; height: 100%; object-fit: cover; display: block;
+            }
+            .app-article-teaser__body {
+                padding: 1rem 1.25rem 1.25rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            .app-article-teaser__meta {
+                display: flex; gap: 0.5rem; align-items: center;
+                margin-bottom: 0.5rem; font-size: 0.75rem;
+            }
+            .app-article-teaser__tag {
+                display: inline-block;
+                color: white;
+                font-size: 0.6875rem;
+                padding: 0.125rem 0.5rem;
+                border-radius: 2px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .app-article-teaser__tag--release { background: #1d70b8; }
+            .app-article-teaser__tag--guide { background: #00703c; }
+            .app-article-teaser__date { color: #505a5f; font-weight: 500; }
+            .app-article-teaser__title { margin: 0.25rem 0 0.5rem; font-size: 1.0625rem; line-height: 1.3; }
+            .app-article-teaser__summary { color: #505a5f; flex: 1; margin-bottom: 0.875rem; font-size: 0.9375rem; }
+            .app-article-teaser__link { font-weight: 600; font-size: 0.9375rem; align-self: flex-start; }
+            html.dark-mode .app-article-teaser { background: #1a1d2e; border-top-color: #c084fc; }
+            html.dark-mode .app-article-teaser:hover { background: #20243a; }
+            html.dark-mode .app-article-teaser__summary,
+            html.dark-mode .app-article-teaser__date { color: #b1b4b6; }
+        </style>
 
         <!-- 6. Explore -->
         <div class="govuk-width-container govuk-!-margin-top-9" id="documentation">
