@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.9.1] - 2026-04-22
+
+### Fixed
+
+- `/arckit.wardley` and `/arckit.wardley.value-chain` quoting rule now treats any whitespace-separated pure-digit word as non-simple, forcing quotes on names like `NIS 2031 FDI Outcomes Reporting`, `ISO 27001 Controls`, `Windows 11 Deployment`, and `Log4j 2024 CVE`. The mermaid `wardley-beta` parser tokenises bare numeric words as numeric literals and fails rendering with `Expecting token of type '[' but found '2031'` (#349)
+- `validate-wardley-math.mjs` Stop-hook now runs a 4th check against `mermaid` / `wardley-beta` blocks: scans `component` / `anchor` / `evolve` / `pipeline` / `->` lines, strips quoted and decorator segments, and blocks Stop on any remaining bare-digit word — catches regressions before the rendered page errors (#349)
+
+### Changed
+
+- `docs/guides/enterprise-scale.md` now copied into the 4 extension directories (`arckit-codex`, `arckit-copilot`, `arckit-opencode`, `arckit-paperclip`) that were missing it (converter catch-up) (#349)
+
 ## [4.9.0] - 2026-04-21
 
 ### Added

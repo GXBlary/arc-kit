@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.9.1] - 2026-04-22
+
+### Fixed
+
+- `/arckit.wardley` and `/arckit.wardley.value-chain` quoting rule now forces quotes on names containing a bare numeric word (`NIS 2031`, `ISO 27001`, `Windows 11`, `Log4j 2024`). The mermaid `wardley-beta` parser tokenises bare digits as numeric literals and breaks rendering otherwise (#349)
+- `validate-wardley-math.mjs` Stop-hook extended to scan `mermaid` / `wardley-beta` blocks and block Stop on any unquoted bare-digit name (declarations, `->` edges, `evolve` targets, `pipeline` parents) (#349)
+
 ## [4.9.0] - 2026-04-21
 
 ### Added
